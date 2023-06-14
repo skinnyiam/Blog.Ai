@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -6,9 +7,11 @@ const Navbar = (props: Props) => {
   return (
     <div>
       <div className="flex justify-between p-3">
-        <h1 className="font-medium cursor-pointer text-xl flex justify-center items-center">
-          Blog<span className="text-teal-700 ">.Ai</span>
-        </h1>
+        <Link href="/" className="flex justify-center items-center">
+          <h1 className="font-medium cursor-pointer text-xl flex justify-center items-center">
+            Blog<span className="text-teal-700 ">.Ai</span>
+          </h1>
+        </Link>
 
         <div>
           <button
